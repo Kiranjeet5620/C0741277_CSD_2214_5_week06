@@ -11,8 +11,8 @@
                 sum += i;
             }
             return sum;
-        }*/
-       /* function addNumbers(countUpTo) {
+        }
+       function addNumbers(countUpTo) {
             sum = 0; i = 0;
             while (i < countUpTo) {
                 sum += i++;
@@ -20,7 +20,7 @@
             }
 
             return sum;
-        }*/
+        }
         rows = prompt("How many rows for your multiplication table?");
         cols = prompt("How many columns for your multiplication table?");
         if (rows == "" || rows == null)
@@ -42,11 +42,26 @@
             }
         output=output + "</table>";
         document.write(output);
+        }*/
+        function trigger() {
+            document.getElementById("hover").addEventListener("mouseover", popup);
+            function popup() {
+                alert("Welcome to my WebPage!!");
+            }
+
         }
     </script>
+    <style>
+        p{
+            font-size:50px;
+            position:fixed;
+            left:550px;
+            top:300px;
+        }
+    </style>
 </head>
-<body>
-    
+<body onload="trigger();">
+    <p id="hover">Welcome!!</p>
     
     
 </body>
